@@ -1,4 +1,4 @@
-document.getElementById('get-report-button').addEventListener('click', loadData);
+document.querySelector('form').addEventListener('submit', loadData);
 
 function compensationRevenue(smokePPM, irSensor, noisePollution, phSensor)  {
   var amount = 0;
@@ -17,7 +17,7 @@ function loadData() {
     if(this.status === 200)  {
       var myObj = JSON.parse(this.responseText);
       
-      var smokePPM = myObj.factories.factoryID101.smokePPM
+      var smokePPM = myObj.factories['factoryID101'].smokePPM
       var irSensor = myObj.factories.factoryID101.irSensor
       var noisePollution = myObj.factories.factoryID101.noisePollution === 1? true : false
       var phSensor = myObj.factories.factoryID101.phSensor;
