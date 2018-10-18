@@ -7,5 +7,10 @@ function saveData(e){
 
   const xhr = new XMLHttpRequest();
   xhr.open('POST', 'https://wasdpollutecheck.firebaseio.com/.json', true);
-  console.log(factoryName, factoryEstablished, isFactoryLarge);
+  xhr.onload = function() {
+    
+
+  }
+
+
 }

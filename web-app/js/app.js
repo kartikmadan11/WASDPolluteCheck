@@ -27,7 +27,7 @@ function loadData(e) {
       
       var smokePPM = myObj.factories[factoryIDString].smokePPM
       var irSensor = myObj.factories[factoryIDString].irSensor
-      var noisePollution = myObj.factories[factoryIDString].noisePollution === 1? true : false
+      var noisePollution = (myObj.factories[factoryIDString].noisePollution === 1? true : false);
       var phSensor = myObj.factories[factoryIDString].phSensor;
       
       var factoryName = myObj.factories[factoryIDString].factoryName;
