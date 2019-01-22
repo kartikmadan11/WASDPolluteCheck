@@ -13,7 +13,20 @@
 
     <button id="get-report-button"><a href="get-report.html">Get Report of a Factory</a></button>
   </div>
-
+  
+<script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBIIZCuo09f5GO9llEobSHFmhrjzF9G0Eo",
+    authDomain: "wasdpollutecheck.firebaseapp.com",
+    databaseURL: "https://wasdpollutecheck.firebaseio.com",
+    projectId: "wasdpollutecheck",
+    storageBucket: "wasdpollutecheck.appspot.com",
+    messagingSenderId: "755507818839"
+  };
+  firebase.initializeApp(config);
+</script>
   <script src = "js/app.js"></script>
 </body>
 </html>

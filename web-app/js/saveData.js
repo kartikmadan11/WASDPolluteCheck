@@ -9,8 +9,7 @@ function saveData(e){
   xhr.open('POST', 'https://wasdpollutecheck.firebaseio.com/.json', true);
   xhr.onload = function() {
     
-
   }
 
-
+  xhr.send();
 }
